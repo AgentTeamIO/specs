@@ -21,7 +21,7 @@ jobs:
           status=0
           for file in *.md; do
             # Find markdown links to .md files (not URLs)
-            links=$(grep -oP '\[.*?\]\(\K[^)]+\.md(?=#|\))' "$file" 2>/dev/null || true)
+            links=$(grep -oP '\[.*?\]\(\K(?!https?://)[^)]+\.md(?=#|\))' "$file" 2>/dev/null || true)
             for link in $links; do
               # Strip any anchor
               target="${link%%#*}"
