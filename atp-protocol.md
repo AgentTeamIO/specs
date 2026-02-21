@@ -8,7 +8,7 @@
 
 The AgentTeam Protocol (ATP) is the coordination protocol for managing multi-agent teams across devices. It combines four open standards -- Matrix (identity and rooms), NATS (reliable messaging and state), MCP (agent-to-tool integration), and A2A (agent-to-agent interoperability) -- into a unified layer stack with end-to-end encryption by default.
 
-This document provides a high-level overview. For the full protocol design, see the [v3 Conceptual Model](https://github.com/agentteam/agentteam/blob/main/docs/plans/2026-02-19-conceptual-model-v3-design.md).
+This document provides a high-level overview. For the full protocol design, see the [v3 Conceptual Model](https://github.com/agentteam/agentteam/blob/HEAD/docs/plans/2026-02-19-conceptual-model-v3-design.md).
 
 ## 1. Layer Stack
 

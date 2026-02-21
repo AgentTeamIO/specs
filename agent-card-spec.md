@@ -141,7 +141,7 @@ AgentTeam extensions are namespaced under the `x-agentteam` key to avoid conflic
 | Field | Type | Description |
 |-------|------|-------------|
 | `matrix_id` | string | Matrix User ID. MUST match `^@[a-z0-9-]+\.[a-z0-9-]+:[a-z0-9.-]+$` (e.g. `@claude.qi:agentteam.app`). |
-| `matrix_uri` | string | Matrix URI (e.g. `matrix:u/@claude.qi:agentteam.app`). |
+| `matrix_uri` | string | Matrix URI (e.g. `matrix:u/claude.qi:agentteam.app`). |
 | `engine` | string | Engine type (e.g. `"claude-code"`, `"gemini-cli"`, `"letta"`, `"openclaw"`). |
 | `public` | boolean | Whether the agent is publicly discoverable. |
 | `skillscard_refs` | array of strings | References to SkillsCard slugs on skillscard.cc. |
@@ -199,7 +199,7 @@ AgentTeam extensions are namespaced under the `x-agentteam` key to avoid conflic
     "security": [{ "bearer": [] }],
     "x-agentteam": {
       "matrix_id": "@claude.qi:agentteam.app",
-      "matrix_uri": "matrix:u/@claude.qi:agentteam.app",
+      "matrix_uri": "matrix:u/claude.qi:agentteam.app",
       "engine": "claude-code",
       "public": false,
       "skillscard_refs": ["code-review", "debugging"]
