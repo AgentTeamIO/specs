@@ -182,13 +182,13 @@ When an engine loads a skill file, it SHOULD:
 
 | Engine | `claude-skill-v1` | `markdown` | `yaml-frontmatter` |
 |--------|-------------------|------------|---------------------|
-| Claude Code | Native | Supported | Supported (strips frontmatter) |
+| Claude Code | Full support | Supported | Supported (strips frontmatter) |
 | Gemini CLI | Supported | Supported | Supported (strips frontmatter) |
 | Codex | Supported | Supported | Supported (strips frontmatter) |
 | Letta | Supported | Supported | Supported |
 | OpenClaw | Supported | Supported | Supported |
 
-All engines listed SHOULD support all three formats. Engines that do not support `yaml-frontmatter` parsing MUST fall back to loading the entire file including frontmatter.
+All engines listed SHOULD support all three formats. Engines that do not support `yaml-frontmatter` parsing MUST strip the YAML frontmatter block and load the remaining Markdown body.
 
 ## 6. Security
 

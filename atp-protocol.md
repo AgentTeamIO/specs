@@ -51,6 +51,8 @@ Communication flows through NATS JetStream with three persistent streams and eph
 | **Streaming tokens** | `stream.{owner}.{agent}.{room_hash}` | Ephemeral |
 | **API requests** | `api.{owner}.agent.*`, `api.{owner}.node.*`, `api.{owner}.crypto.proxy` | Request/Reply |
 
+These 6 categories contain 13 subjects total. The API requests category expands to 8 individual subjects (4 agent CRUD + 3 node lifecycle + 1 crypto proxy).
+
 The Gateway bridges Matrix events to NATS subjects without inspecting message content. All routing decisions happen on the user's Node after decryption.
 
 ## 4. End-to-End Encryption
@@ -104,7 +106,7 @@ These tools complement whatever MCP tools the underlying engine already provides
 - [AgentTeam Card Specification](./agent-card-spec.md) -- Card envelope, body schemas, registry API
 - [Skill Content Format](./skill-format.md) -- Skill file formats
 - [Team Template Format](./team-template.md) -- Team deployment templates
-- [v3 Conceptual Model (full design)](https://github.com/agentteam/agentteam/blob/main/docs/plans/2026-02-19-conceptual-model-v3-design.md) -- Complete protocol specification
+- [v3 Conceptual Model (full design)](https://github.com/agentteam/agentteam/blob/HEAD/docs/plans/2026-02-19-conceptual-model-v3-design.md) -- Complete protocol specification
 - [Matrix Specification](https://spec.matrix.org/) -- Identity, rooms, E2EE
 - [NATS Documentation](https://docs.nats.io/) -- JetStream, KV
 - [MCP Specification](https://modelcontextprotocol.io/) -- Agent-tool integration

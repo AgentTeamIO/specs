@@ -350,8 +350,11 @@ AgentCard bodies are designed as a true superset of the [A2A Agent Card](https:/
 
 ### 6.1 A2A Required Fields
 
-The following A2A v1.0 required fields MUST be present in every AgentCard body:
+The following A2A v1.0 required fields MUST be present in every AgentCard body (all 8 are in the schema's `required` array):
 
+- `name` -- agent display name
+- `description` -- agent description
+- `version` -- agent version
 - `defaultInputModes` -- at least one supported input modality
 - `defaultOutputModes` -- at least one supported output modality
 - `capabilities` -- agent capability declarations

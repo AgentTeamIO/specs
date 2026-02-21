@@ -92,7 +92,7 @@ Before deploying a team template, the CLI MUST:
 1. Verify that all engines listed in `prerequisites.engines` are detected on the system.
 2. Verify that all tools listed in `prerequisites.tools` are available.
 3. Verify that each agent role's `engine` is available (either via `prerequisites` or direct detection).
-4. If any prerequisite is missing, display the missing items and abort deployment (or prompt the user for confirmation to continue without them).
+4. If any prerequisite is missing, display missing items and suggest alternative engines. Deployment continues with user confirmation; hard abort only if no compatible engine exists.
 
 ### 4.3 Example
 
