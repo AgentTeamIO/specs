@@ -121,9 +121,11 @@ When a user runs `agentteam up --template {slug}`, the CLI:
 2. Displays the team configuration (roles, engines, skills, rooms) for user review.
 3. Validates prerequisites (Section 4.2).
 4. For each agent role, executes the equivalent of:
-   ```
+
+   ```sh
    agentteam agent add {role} --engine {engine}
    ```
+
 5. Loads referenced skills for each agent.
 6. Creates rooms as configured (DM rooms + `#team` room + custom rooms).
 7. Starts all agents.
