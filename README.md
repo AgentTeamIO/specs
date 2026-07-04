@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/agentteamio-specs-badge.png)](https://mseep.ai/app/agentteamio-specs)
+
 # AgentTeam Specifications
 
 Open specifications for the [AgentTeam](https://agentteam.app) ecosystem. Published at [agentteam.org](https://agentteam.org).
